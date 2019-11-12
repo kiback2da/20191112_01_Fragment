@@ -7,16 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.tjoeun.a20191112_01_fragment.R
-import kotlinx.android.synthetic.main.fragment_first.*
+import kotlinx.android.synthetic.main.fragment_second.*
 
-class FirstFragment : Fragment(){
+class SecondFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_first,container,false)
+        return inflater.inflate(R.layout.fragment_second,container,false)
     }
 
     // 액티비티 위에 얹어졌을때 실행되는 fun
@@ -25,9 +25,8 @@ class FirstFragment : Fragment(){
         super.onActivityCreated(savedInstanceState)
 
 
-        firstFragmentTxt.text = "첫번째 프래그먼트에서 \n글자 바꿈"
-        firstFragmentTxt.gravity = Gravity.CENTER
+        secondFragmentTxt.text = "두번째 프래그먼트에서 \n글자 바꿈"
+        secondFragmentTxt.gravity = Gravity.CENTER
 
     }
-
 }
