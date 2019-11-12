@@ -22,5 +22,6 @@ class TestActivity : BaseActivity() {
 
     override fun setValues() {
         testViewPager.adapter = TestViewPagerAdapter(supportFragmentManager)
+        myTabLayout.setupWithViewPager(testViewPager)
     }
 }
